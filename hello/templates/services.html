@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% csrf_token %}
+{% load static %}
+
+{% block title %}Apni Car | Services{% endblock title %}
+
+{% block body %}
+<div class="col">
+  <div class="card shadow-sm d-flex flex-row align-items-start">
+    <img src="{% static 'img11.jpg' %}" style="height:300px; width:300px; object-fit:cover;" class="float-start me-3 mt-2" alt="Image">
+    <div class="card-body"><p><ul>
+        <li><h5>Fast & Reliable: Get your car delivered safely and on time.</h5></li><br><br>
+        <li><h5>Door-to-Door Service: Convenient delivery right to your location.</h5></li><br><br>
+        <li><h5>Trusted Handling: Experienced drivers, secure transport guaranteed5</h5></li>
+    </ul></p>
+      
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card shadow-sm d-flex flex-row align-items-start">
+    <img src="{% static 'img12.jpg' %}" style="height:300px; width:300px; object-fit:cover;" class="float-start me-3 mt-2" alt="Image">
+    <div class="card-body"><p><ul>
+        <li><h5>Affordable Coverage: Protect your car with plans that fit your budget.</h5></li><br><br>
+        <li><h5>Fast Claims: Quick and hassle-free claims when you need us most. </h5></li><br><br>
+        <li><h5>Trusted Support: Expert guidance and 24/7 customer service.</h5></li>
+    </ul></p>
+      
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card shadow-sm d-flex flex-row align-items-start">
+    <img src="{% static 'img13.jpg' %}" style="height:300px; width:300px; object-fit:cover;" class="float-start me-3 mt-2" alt="Image">
+    <div class="card-body"><p><ul>
+        <li><h5>Easy Approval: Quick and simple loan processing.</h5></li><br><br>
+        <li><h5>Flexible Plans: Loans tailored to fit your budget. </h5></li><br><br>
+        <li><h5>Competitive Rates: Low interest for smarter car financing.</h5></li>
+    </p></ul>
+      
+    </div>
+  </div>
+</div>
+{% endblock body %}
